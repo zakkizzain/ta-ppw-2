@@ -14,6 +14,8 @@ Halaman Projects: menampilkan portofolio karya atau proyek yang telah dibuat.
 Halaman Contact: menampilkan kontak media sosial atau alamat email.
 
 
+
+Instalasi dan Penggunaan
 1. configurasi global user,make directory, inisialisasi
 <img width="903" height="1005" alt="image" src="https://github.com/user-attachments/assets/79f57b93-830e-4e81-88f5-f918d6746e98" />
 
