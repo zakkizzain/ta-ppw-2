@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sertifikat - Muhammad Zaki Zain</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="tentang-saya.html">Tentang Saya</a>
+                <a href="proyek.html">Proyek</a>
+                <a href="skill&tools.html">Skill & Tools</a>
+                <a href="sertifikat.html" class="active">Sertifikat</a>
+                <a href="pengalaman.html">Pengalaman</a>
+                <a href="kontak.html">Kontak</a>
+            </div>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Sertifikat Saya</h2>
+        <div class="cert-grid">
+            <div class="cert-card" onclick="openModal('img/sertifikat1.jpg')">
+                <img src="sertif1.jpeg" alt="Sertifikat 1" class="cert-img">
+                <h3>Pelatihan Web Development</h3>
+                <p class="cert-date">Diterbitkan: Mei 2024</p>
+            </div>
+            <div class="cert-card" onclick="openModal('img/sertifikat2.jpg')">
+                <img src="sertif2.png" alt="Sertifikat 2" class="cert-img">
+                <h3>Cloud Computing Fundamental</h3>
+                <p class="cert-date">Diterbitkan: Agustus 2024</p>
+            </div>
+            <div class="cert-card" onclick="openModal('img/sertifikat3.jpg')">
+                <img src="sertif3.jpg" alt="Sertifikat 3" class="cert-img">
+                <h3>Data Science Menggunakan Python</h3>
+                <p class="cert-date">Diterbitkan: Desember 2024</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div id="modal" class="modal" onclick="closeModal()">
+        <span class="close-btn" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modal-img" src="">
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Muhammad Zaki Zain. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function openModal(imgSrc) {
+            document.getElementById("modal").style.display = "flex";
+            document.getElementById("modal-img").src = imgSrc;
+        }
+
+        function closeModal() {
+            document.getElementById("modal").style.display = "none";
+        }
+    </script>
+</body>
+
+</html>
